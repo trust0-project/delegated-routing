@@ -27,6 +27,13 @@
     "typescript": "^5",
     "rollup":"^4.28.1",
     "@rollup/plugin-commonjs": "^28.0.1",
-    "@rollup/plugin-json": "^6.1.0"
+    "@rollup/plugin-json": "^6.1.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "semantic-release": "^24.0.0",
+    "conventional-changelog-conventionalcommits": "^8.0.0"
   }
 }

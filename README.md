@@ -1,1 +1,1 @@
-# Trust0 - Delegated routing IPFS node
+# Trust0 - Delegated routing IPFS node for trust0 network

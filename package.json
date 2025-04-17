@@ -1,6 +1,6 @@
 {
   "name": "@trust0/delegated-routing",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publishConfig": {
     "access": "public"
   },
@@ -28,7 +28,7 @@
     "rollup-plugin-jscc": "^2.0.0",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5",
-    "rollup":"^4.28.1",
+    "rollup": "^4.28.1",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-json": "^6.1.0",
     "@semantic-release/changelog": "^6.0.3",

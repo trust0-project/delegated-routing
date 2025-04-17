@@ -7,6 +7,9 @@
   "type": "module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "bin": {
+    "trust0-routing": "./.bin/delegated-routing"
+  },
   "scripts": {
     "build": "npx rollup -c rollup/rollup.mjs",
     "start": "DEBUG=\"libp2p:*\" nodemon build/index.js",

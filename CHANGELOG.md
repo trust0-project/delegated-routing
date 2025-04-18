@@ -1,3 +1,9 @@
+## [1.0.4-rc.3](https://github.com/trust0-project/delegated-routing/compare/v1.0.4-rc.2...v1.0.4-rc.3) (2025-04-18)
+
+### Bug Fixes
+
+* latest node rc version ([0eac7dd](https://github.com/trust0-project/delegated-routing/commit/0eac7dd56227994879aed32f7052caced7c6a760))
+
 ## [1.0.4-rc.2](https://github.com/trust0-project/delegated-routing/compare/v1.0.4-rc.1...v1.0.4-rc.2) (2025-04-18)
 
 ### Bug Fixes

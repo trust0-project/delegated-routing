@@ -1,8 +1,14 @@
 export default {
     branches: [
-      'main',
-      '+([0-9])?(.{+([0-9]),x}).x',
-      { name: 'beta', prerelease: 'rc' } // make a branch 'beta' a pre-release branch as '6.6.0-rc1'
+      {
+        name: "main"
+      },
+      {
+        name: "develop",
+        prerelease: "rc",
+        channel: "rc"
+      },
+      "v+([0-9])?(.{+([0-9]),x}).x"
     ],
     plugins: [
       ['@semantic-release/commit-analyzer', { preset: "conventionalcommits" }],
@@ -11,6 +17,8 @@ export default {
       ['@semantic-release/exec', { "prepareCmd": 'npm version ${nextRelease.version} --git-tag-version false'}],
       ['@semantic-release/exec', { "prepareCmd": 'npm run build'}],
       ['@semantic-release/exec', { "prepareCmd": 'npm publish --access public'}],
+      ['@semantic-release/exec', { "prepareCmd": 'docker build . -t trust0/delegated-routing:v${nextRelease.version} -t trust0/delegated-routing:latest'}],
+      ['@semantic-release/exec', { "prepareCmd": 'docker push trust0/delegated-routing:v${nextRelease.version} && docker push trust0/delegated-routing:latest'}],
       [
         '@semantic-release/git',
         {

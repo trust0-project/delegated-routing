@@ -1,6 +1,6 @@
 {
   "name": "@trust0/delegated-routing",
-  "version": "1.0.4-rc.3",
+  "version": "1.0.4-rc.4",
   "publishConfig": {
     "access": "public"
   },
